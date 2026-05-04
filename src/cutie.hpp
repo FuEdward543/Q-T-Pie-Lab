@@ -1,7 +1,10 @@
+#ifndef CUTIE_HPP
+#define CUTIE_HPP
+
 #include <string>
 
 class Cutie {
-  private:
+  protected:
     std::string description;
     int cuteness_rating;
 
@@ -13,4 +16,6 @@ class Cutie {
 
     virtual std::string get_description() = 0;
     virtual int get_cuteness_rating() = 0;
-}
+};
+
+#endif
